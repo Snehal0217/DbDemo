@@ -54,6 +54,11 @@ public class UserController {
         }
     }
 
+    /**
+     * Added comment
+     * @param id
+     * @return
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         Optional<User> user = userService.getUserById(id);
